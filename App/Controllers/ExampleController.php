@@ -5,8 +5,13 @@ namespace App\Controllers;
 
 class ExampleController
 {
-	public function example()
+	public function index()
 	{
-		echo "Welcome to ExampleController and using the method action index.";
+		$this->render('example');
+	}
+
+	public function render($view)
+	{
+		require_once "../App/Views/Example/" . $view . ".phtml";
 	}
 }

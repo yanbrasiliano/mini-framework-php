@@ -33,10 +33,11 @@ abstract class Bootstrap
 		foreach ($this->getRoute() as $key => $route) {
 			if ($url == $route['route']) {
 				$class = "App\\Controllers\\" . ucfirst($route['controller']);
+				$controller = new $class;
+				$action = $route['action'];
+				$controller->$action();
 			}
-			$controller = new $class;
-			$action = $route['action'];
-			$controller->$action();
 		}
 	}
+
 }

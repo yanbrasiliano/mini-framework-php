@@ -2,11 +2,13 @@
 
 namespace App\Controllers;
 
+use App\Config\Action;
 
-class HomeController
+class HomeController extends Action
 {
 	public function index()
 	{
-		echo "Welcome to HomeController and using the method action index.";
+		$this->render('home');
 	}
+
 }
