@@ -10,7 +10,7 @@ class Connection
 		try {
 			$conn = new \PDO(
 				"mysql:
-				host=localhost;
+				host=localhost.
 				dbname=mini-framework;",
 				"root",
 				"root"
