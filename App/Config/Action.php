@@ -4,8 +4,14 @@ namespace App\Config;
 
 abstract class Action
 {
-
+	
 	protected function render($view)
+	{
+		require_once "../App/Views/Layout.phtml" ;
+
+	}
+
+	protected function content()
 	{
 		require_once "../App/Views/" . $this->treatClass() . "/" . $view . ".phtml";
 	}
