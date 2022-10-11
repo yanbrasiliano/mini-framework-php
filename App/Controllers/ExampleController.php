@@ -12,8 +12,4 @@ class ExampleController extends Action
 		$this->render('example');
 	}
 
-	// public function render($view)
-	// {
-	// 	require_once "../App/Views/Example/" . $view . ".phtml";
-	// }
 }
