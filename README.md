@@ -10,4 +10,4 @@ This project is a simple exemple of a micro-framework in PHP with architecture M
 
 If you want to add new routes, insert them in the Route.php file.
 
-## ALERT -> UNDER CONSTRUCTION!
+
